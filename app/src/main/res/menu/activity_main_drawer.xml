@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Destination"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="@string/destination" />
+        <item
+            android:id="@+id/nav_States"
+            android:icon="@drawable/ic_storage_black_24dp"
+            android:title="@string/state" />
+        <item
+            android:id="@+id/nav_Favorite"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/favorite" />
+
+    </group>
+
+
+  <!--  <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/action_settings" />
+    <item
+        android:id="@+id/nav_rate"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:title="@string/rate" />-->
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_about_black_24dp"
+        android:title="@string/about" />
+
+
+</menu>

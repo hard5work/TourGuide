@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context="com.lintend.tourguide.DetailState">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:contentScrim="@color/colorPrimary"
+            app:statusBarScrim="@color/colorPrimaryDark"
+            app:collapsedTitleTextAppearance="@color/white"
+            app:collapsedTitleGravity="start"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <ImageView
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                android:id="@+id/DstateImage"
+                android:src="@drawable/gradient3"
+                android:contentDescription="@string/ImageDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                app:layout_collapseMode="parallax"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/dstateno"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="@string/stateNO"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/dstatenodes"
+                    app:layout_collapseMode="parallax"
+                    android:layout_marginTop="45dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="@string/detailstate"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/dstateno"
+                    android:textSize="20sp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.Toolbar
+                app:layout_collapseMode="pin"
+                android:id="@+id/stateDetailToolBar"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dstateTourList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

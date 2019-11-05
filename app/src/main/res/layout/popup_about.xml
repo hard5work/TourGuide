@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:elevation="5dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/appTitle"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/appImage"
+        android:layout_below="@id/appTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:contentDescription="@string/ImageDesc"
+        android:src="@drawable/nepal"
+        android:layout_width="90dp"
+        android:layout_height="90dp" />
+    <TextView
+        android:id="@+id/appVersion"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/version"
+        android:layout_below="@id/appImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/appVersion"
+        android:id="@+id/appOK"
+        android:text="@string/ok"
+        android:layout_toRightOf="@id/appImage"
+        android:layout_toEndOf="@id/appImage"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
